@@ -1380,6 +1380,36 @@
               }
             },
             {
+              "name": "node9",
+              "repo": "node9-ai/node9-proxy",
+              "org": "Node9",
+              "desc": "Tool-call gate for coding agents and MCP servers that hooks Claude Code, Codex CLI, Gemini CLI, Cursor, Copilot CLI and others, parses shell commands as an AST, and allows, holds for human approval, or blocks each call before it runs while recording every decision.",
+              "license": "Apache-2.0",
+              "status": [
+                "open_source"
+              ],
+              "flags": [
+                "commercial_features",
+                "telemetry"
+              ],
+              "note": "— **note:** enforcement is local and needs no account; an optional hosted workspace and a paid Pro tier (SSO, central audit export) are advertised. `node9 init` asks before sending a one-time install ping (default yes). Network egress control is off by default, so a command that sends a file straight to the network is not treated as a read of that file until `node9 egress protect` is enabled.",
+              "related": [
+                {
+                  "label": "Pipelock",
+                  "url": "https://github.com/luckyPipewrench/pipelock"
+                },
+                {
+                  "label": "agentsh",
+                  "url": "https://github.com/canyonroad/agentsh"
+                }
+              ],
+              "metrics": {
+                "stars": 216,
+                "updated": "2026-09-25",
+                "snapshot": "2026-09-25"
+              }
+            },
+            {
               "name": "SourceryKit",
               "repo": "ProvablyAI/sourcerykit",
               "org": "ProvablyAI",
