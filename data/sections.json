@@ -1383,7 +1383,7 @@
               "name": "node9",
               "repo": "node9-ai/node9-proxy",
               "org": "Node9",
-              "desc": "Security and governance layer for AI coding agents and MCP servers (Claude Code, Codex CLI, Gemini CLI, Cursor, Copilot CLI and more) that checks every tool call before it runs: a credential jail, secret and PII detection, rules for destructive git, SQL and shell commands, per-service shields, human approval for held actions, MCP tool pinning, an egress allowlist and container sandbox, plus machine posture scoring, repo scanning for hijackable agent workflows, and one audit record across agents.",
+              "desc": "Local pre-execution gate for AI coding agents and MCP servers that allows, holds for human approval, or blocks each tool call, with a credential jail and secret detection on by default.",
               "license": "Apache-2.0",
               "status": [
                 "open_source"
@@ -1392,7 +1392,7 @@
                 "commercial_features",
                 "telemetry"
               ],
-              "note": "— **note:** enforcement runs locally with no account; a hosted team workspace and a paid Pro tier are optional. `node9 init` asks before sending a one-time install ping. The egress allowlist is opt-in.",
+              "note": "— **note:** enforcement uses each agent's own hooks and an MCP wrapper, not an isolation boundary: agents without hook support are covered only through MCP, and a script the agent runs is judged by its command line, not its contents. The egress allowlist is opt-in. Runs locally with no account; a hosted team workspace and a paid tier are optional, and `node9 init` asks before sending a one-time install ping.",
               "related": [
                 {
                   "label": "Pipelock",
